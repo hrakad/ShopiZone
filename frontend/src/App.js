@@ -1,3 +1,4 @@
+import data from "./data";
 
 function App() {
   return (
@@ -6,7 +7,27 @@ function App() {
         <a href="/">ShopiZone</a>
       </header>
       <main>
-        Products List
+        <h1> Products</h1>
+        <div className="products">
+          {
+            data.products.map(product => (
+              <div className="product" key={product.slug}>
+                <img src={product.image} alt={product.name} />
+                <div className="product_info">
+                  <p>
+                    {product.name}
+                  </p>
+                  <p>
+                    {product.price}
+                  </p>
+                </div>
+
+              </div>
+            )
+
+            )
+          }
+        </div>
       </main>
     </div>
   );

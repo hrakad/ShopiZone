@@ -4,7 +4,7 @@ const data = {
       name: "Bean Spaghetti Pasta",
       slug: "bean-spaghetti-pasta",
       category: "Organic Beans",
-      image: "/images/bean pasta",
+      image: "/images/bean pasta.jpg",
       price: 27.99,
       countInStock: 300,
       brand: "EXPLORE CUISINE",
@@ -17,7 +17,7 @@ const data = {
       name: "Plant-Based Protein Powder",
       slug: "plant-based-protein-powder",
       category: "Protein",
-      image: "/images/protein powder",
+      image: "/images/protein powder.jpg",
       price: 24.99,
       countInStock: 200,
       brand: "MRM",
@@ -30,7 +30,7 @@ const data = {
       name: "Plant-Based Protein Bars",
       slug: "plant-based-protein-bar",
       category: "Protein",
-      image: "/images/protein bar",
+      image: "/images/protein bar.jpg",
       price: 40.95,
       countInStock: 150,
       brand: "Garden of Life",
@@ -43,7 +43,7 @@ const data = {
       name: "Stevia",
       slug: "stevia",
       category: "Organic Sugar",
-      image: "/images/stevia",
+      image: "/images/stevia.jpg",
       price: 7.99,
       countInStock: 900,
       brand: "Stevia Select",
@@ -55,7 +55,7 @@ const data = {
       name: "Organic Peanut Butter",
       slug: "organic-peanut-butter",
       category: "Organic Beans",
-      image: "/images/peanut butter",
+      image: "/images/peanut butter.jpg",
       price: 27.99,
       countInStock: 120,
       brand: "WOODSTOCK",
@@ -68,7 +68,7 @@ const data = {
       name: "Nutritional Yeast Powder",
       slug: "nutritional-yeast-powder",
       category: "Vitamins",
-      image: "/images/yeast powder",
+      image: "/images/yeast powder.jpg",
       price: 33.24,
       countInStock: 90,
       brand: "NOW",
@@ -80,3 +80,5 @@ const data = {
   ]
 
 }
+
+export default data;

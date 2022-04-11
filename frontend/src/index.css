@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background-color: rgb(153, 201, 245);
+  background-color: rgb(116, 119, 122);
   padding: 1rem;
 }
 
@@ -16,4 +16,28 @@ header a {
   font-weight: bold;
   text-decoration: none;
   color: #fff;
+}
+
+h1 {
+  padding-left: 1rem;
+}
+
+.products {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+.product {
+  margin: 1rem;
+  cursor: pointer;
+}
+.product img {
+  width: 100%;
+  max-width: 250px;
+  height: 200px;
+}
+.product_info {
+  padding: 1rem;
 }
