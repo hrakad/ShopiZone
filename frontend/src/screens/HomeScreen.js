@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useReducer } from "react";
 import { Link } from "react-router-dom";
 import axios from 'axios';
 
@@ -15,7 +15,11 @@ const reducer = (state, action) => {
   }
 }
 function HomeScreen() {
-  const [products, setProducts] = useState([]);
+  const [{ loading, error, products }, dispatch] = useReducer(reducer, {
+    loading: true,
+    error: '',
+  })
+  //const [products, setProducts] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios.get('/api/products');
