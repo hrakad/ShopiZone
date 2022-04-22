@@ -27,7 +27,6 @@ h1 {
 .product {
   margin: 1rem;
   cursor: pointer;
-  border: solid rgb(116, 119, 122) 1px;
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
