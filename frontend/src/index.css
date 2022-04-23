@@ -24,6 +24,10 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+.rating span {
+  color: #ffc000;
+}
 .product {
   margin: 1rem;
   cursor: pointer;
@@ -39,4 +43,8 @@ h1 {
 .product_info {
   padding: 1rem;
   font-size: 14px;
+}
+#reviews {
+  display: flex;
+  gap: 25px;
 }
