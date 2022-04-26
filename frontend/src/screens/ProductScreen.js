@@ -8,6 +8,9 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
 import Rating from "../components/Rating";
+import Loading from "../components/Loading";
+import Message from "../components/Message";
+import { getError } from "../errors";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -37,8 +40,8 @@ function ProductScreen() {
       try {
         const result = await axios.get(`/api/products/slug/${slug}`);
         dispatch({ type: 'FETCH_SUCCESS', payload: result.data })
-      } catch (error) {
-        dispatch({ type: 'FETCH_FAIL', payload: error.message })
+      } catch (err) {
+        dispatch({ type: 'FETCH_FAIL', payload: getError(err) })
       }
 
       //setProducts(result.data);
@@ -46,9 +49,10 @@ function ProductScreen() {
     fetchData();
   }, [slug]);
   return (
-    loading ? (<div>Loading...</div>
+    loading ? (
+      <Loading />
     ) : error ? (
-      <div>{error}</div>
+      <Message variant="danger">{error}</Message>
     ) : (
       <div>
         <Row>
