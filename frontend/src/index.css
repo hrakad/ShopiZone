@@ -26,7 +26,7 @@ h1 {
 }
 
 .rating span {
-  color: #ffc000;
+  color: #f09e3b;
 }
 .product {
   margin: 1rem;
@@ -47,4 +47,20 @@ h1 {
 #reviews {
   display: flex;
   gap: 25px;
+}
+
+.img-large {
+  max-width: 100%;
+  margin-top: 80px;
+  max-height: 550px;
+  cursor: pointer;
+}
+
+.img-large:hover {
+  transform: scale(1.22);
+}
+
+.product-to-cart {
+  background-color: #f09e3b;
+  color: black;
 }
