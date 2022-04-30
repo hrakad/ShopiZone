@@ -64,3 +64,8 @@ h1 {
   background-color: #f09e3b;
   color: black;
 }
+
+.img-thumbnail {
+  height: 80px;
+  width: 60px;
+}
