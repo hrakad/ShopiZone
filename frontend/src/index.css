@@ -69,3 +69,7 @@ h1 {
   height: 80px;
   width: 60px;
 }
+
+.small-container {
+  max-width: 600px;
+}
