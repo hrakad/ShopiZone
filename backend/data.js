@@ -1,7 +1,7 @@
 const data = {
   products: [
     {
-      _id: '1',
+      //_id: '1',
       name: "Bean Spaghetti Pasta",
       slug: "bean-spaghetti-pasta",
       category: "Organic Beans",
@@ -15,7 +15,7 @@ const data = {
       description: "Gluten Free Pasta, Easy to Make - USDA Certified Organic, Vegan, Kosher, Non GMO"
     },
     {
-      _id: '2',
+      //_id: '2',
       name: "Plant-Based Protein Powder",
       slug: "plant-based-protein-powder",
       category: "Protein",
@@ -29,7 +29,7 @@ const data = {
       description: "Easy to Digest | with BCAAs| Vegan + Gluten-Free | Clinically Tested| Digestive enzymes"
     },
     {
-      _id: '3',
+      //_id: '3',
       name: "Plant-Based Protein Bars",
       slug: "plant-based-protein-bar",
       category: "Protein",
@@ -43,7 +43,7 @@ const data = {
       description: "Organic Fit Bar, Chocolate Fudge (12 per carton) - Burn Fat, Satisfy Hunger and Fight Cravings, Low Sugar Plant Protein Bar with Fiber"
     },
     {
-      _id: '4',
+      //_id: '4',
       name: "Stevia",
       slug: "stevia",
       category: "Organic Sugar",
@@ -56,7 +56,7 @@ const data = {
       numReviews: 356,
       description: "Sugar Free Plant Based Stevia Sweetener USDA Certified | Non GMO Pure Stevia Extract from Sweet Leaf"
     }, {
-      _id: '5',
+      //_id: '5',
       name: "Organic Peanut Butter",
       slug: "organic-peanut-butter",
       category: "Organic Beans",
@@ -70,7 +70,7 @@ const data = {
       description: "Certified Kosher Smooth, creamy, and unsalted, Only 1 ingredient"
     },
     {
-      _id: '6',
+      //_id: '6',
       name: "Nutritional Yeast Powder",
       slug: "nutritional-yeast-powder",
       category: "Vitamins",
