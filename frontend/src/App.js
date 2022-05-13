@@ -14,10 +14,12 @@ import SigninScreen from './screens/SigninScreen';
 import SignupScreen from './screens/SignupScreen';
 import PaymentMethodScreen from './screens/PaymentMethodScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
+import OrderScreen from './screens/OrderScreen';
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
   const { cart, userInfo } = state;
+
 
   const signoutHandler = () => {
     ctxDispatch({ type: 'USER_SIGNOUT' });
@@ -26,6 +28,7 @@ function App() {
   }
   return (
     <BrowserRouter>
+
       <div className="d-flex flex-column site-container">
         <header>
           <Navbar bg="dark" variant="dark">
@@ -73,6 +76,7 @@ function App() {
               <Route path="/" element={<HomeScreen />} />
               <Route path="/paymentMethod" element={<PaymentMethodScreen />} />
               <Route path="/placeOrder" element={<PlaceOrderScreen />} />
+              <Route path="/order/:id" element={<OrderScreen />}></Route>
             </Routes>
           </Container>
         </main>
