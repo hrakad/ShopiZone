@@ -5,11 +5,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { StoreProvider } from './Store';
+import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 
 ReactDOM.render(
   <React.StrictMode>
     <StoreProvider>
-      <App />
+      <PayPalScriptProvider deferLoading={true}>
+        <App />
+      </PayPalScriptProvider>
     </StoreProvider>
   </React.StrictMode>,
   document.getElementById('root')
